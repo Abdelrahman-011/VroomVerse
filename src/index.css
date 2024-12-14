@@ -1,0 +1,85 @@
+@tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playwright+TZ+Guides&display=swap');
+
+ :root
+ {
+    --main-color:#FF013E;
+    --font-heading:"Playfair Display", serif;
+    --font-content: "Roboto", sans-serif;
+ }
+
+ .row{
+     @apply flex flex-row flex-wrap;
+ }
+
+.bg-hero
+{
+ background-image: url(assets/images/Hero.jpg);
+ position: relative;
+}
+.bg-hero::before
+{
+ content: '';
+ width: 100%;
+ height: 100%;
+ left: 0;
+ position: absolute;
+ background-color: rgba(0,0,0,0.7);
+}
+
+ .btn{
+  @apply px-4 py-2 rounded-md text-white
+ }
+
+ body
+ {
+  font-family: var(--font-content);
+
+ }
+
+ 
+ .text-main
+ {
+  color: var(--main-color);
+ }
+ .bg-main
+ {
+  background-color: var(--main-color);
+ }
+ .border-color-main
+ {
+  border-color: var(--main-color);
+ }
+ .font-heading
+ {
+  font-family: var(--font-heading);
+  
+ }
+ .font-content
+ {
+  font-family: var(--font-content);
+ }
+
+ .bg-hero
+ {
+   background-image: url(assets/images/Hero.jpg);
+   position: relative;
+   background-position: center;
+   background-size: cover;
+ }
+ .bg-hero::before
+ {
+   content: '';
+   width: 100%;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   background-color: rgba(0,0,0,0.8);
+ }
+.active
+{
+  color: var(--main-color);
+}
